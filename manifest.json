@@ -10,7 +10,7 @@
     },
     "content_scripts": [
       {
-        "matches": ["https://*.hbonordic.com/*/play"],
+        "matches": ["https://*.hbonordic.com/*"],
         "js": ["add-hotkeys.js"]
       }
     ]
