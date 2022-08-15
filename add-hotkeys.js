@@ -15,6 +15,7 @@ document.body.onkeydown = function(e) {
             cls_clk("div.r-6dt33c:nth-child(2) > div:nth-child(1) > div:nth-child(2), div.r-1pz39u2:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2)")
         break;
 */
+/* Selecting by attribute names (didn't work)
         case KeyCodes.Left:
             console.log("Skipping backward");
             cls_clk('div[data-testid="SkipBackwardButton"]');
@@ -23,19 +24,29 @@ document.body.onkeydown = function(e) {
             console.log("Skipping forward");
             cls_clk('div[data-testid="SkipForwardButton"]');
         break;
+*/
+        case KeyCodes.Left:
+            console.log("Skipping backward");
+            cls_clk("div.r-1pz39u2:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1)");
+        break;
+        case KeyCodes.Right:
+            console.log("Skipping forward");
+            cls_clk("div.r-1pz39u2:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(3)");
+        break;
     };
     return original_onkeydown(e);
 }
 
 // Small stylistic change (height of playback background gradient)
+var playbackBkg = document.querySelector("div.r-13awgt0:nth-child(4) > div:nth-child(2)");
 function fixStyle() {
-    document.querySelector("div.r-13awgt0:nth-child(4) > div:nth-child(2)").style.height = "200px"
+    playbackBkg.style.height = "200px";
 }
-document.querySelector("div.r-13awgt0:nth-child(4) > div:nth-child(2)").onload = fixStyle;
+window.onload = fixStyle;
 
 
 /*
 Bakup of attribute names
-document.querySelector('div[data-testid="SkipBackwardButton"]')
-document.querySelector('div[data-testid="SkipForwardButton"]')
+document.querySelector('div[data-testid="SkipBackwardButton"]');
+document.querySelector('div[data-testid="SkipForwardButton"]');
 */
