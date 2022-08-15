@@ -1,18 +1,23 @@
 {
-
     "manifest_version": 2,
     "name": "KEYZ PLZ HBO",
     "version": "0.4",
-  
+    
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "keyz-plz-hbo@maximum.cum"
+        }
+    },
+    
     "description": "Adds right/left arrow keys for skipping forward/backward in HBO Max plus some other small changes. Partly adopted from https://github.com/samoylovfp/hbo-keys.",
     "icons": {
         "48": "icons/iconV2.png"
     },
+    
     "content_scripts": [
-      {
+        {
         "matches": ["https://play.hbomax.com/player/*"],
         "js": ["add-hotkeys.js"]
-      }
+        }
     ]
-
-  }
+}
