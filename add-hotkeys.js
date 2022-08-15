@@ -31,4 +31,11 @@ document.body.onkeydown = function(e) {
 function fixStyle() {
     document.querySelector("div.r-13awgt0:nth-child(4) > div:nth-child(2)").style.height = "200px"
 }
-window.onload = fixStyle;
+document.querySelector("div.r-13awgt0:nth-child(4) > div:nth-child(2)").onload = fixStyle;
+
+
+/*
+Bakup of attribute names
+document.querySelector('div[data-testid="SkipBackwardButton"]')
+document.querySelector('div[data-testid="SkipForwardButton"]')
+*/
