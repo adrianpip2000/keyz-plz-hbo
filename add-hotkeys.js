@@ -9,7 +9,6 @@ var original_onkeydown = document.body.onkeydown;
 document.body.onkeydown = function(e) {
     let cls_clk = (cls) => document.querySelector(cls).click();
     switch (e.keyCode) {
-        //Selecting by attribute names
         case KeyCodes.Left:
             console.log("Skipping backward");
             cls_clk('div[data-testid="SkipBackwardButton"]');
