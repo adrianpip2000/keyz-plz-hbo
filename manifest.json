@@ -1,16 +1,16 @@
 {
 
-    "manifest_version": 2,
-    "name": "Hbo Nordic Hotkeys",
-    "version": "0.2",
+    "manifest_version": 1,
+    "name": "HBO Max Hotkeys",
+    "version": "0.1",
   
-    "description": "Allows using conventional hotkeys in hbo in-browser player",
+    "description": "Adds right/left arrow keys for skipping forward/backward in HBO Max. Partly adopted from https://github.com/samoylovfp/hbo-keys.",
     "icons": {
-        "48": "icons/kb-48.png"
+        "48": "icons/iconV1.png"
     },
     "content_scripts": [
       {
-        "matches": ["https://*.hbonordic.com/*"],
+        "matches": ["https://*play.hbomax.com/player/*"],
         "js": ["add-hotkeys.js"]
       }
     ]
