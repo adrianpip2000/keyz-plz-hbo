@@ -36,14 +36,14 @@ document.body.onkeydown = function(e) {
     };
     return original_onkeydown(e);
 }
-
+/*
 // Small stylistic change (height of playback background gradient)
 var playbackBkg = document.querySelector("div.r-13awgt0:nth-child(4) > div:nth-child(2)");
 function fixStyle() {
     playbackBkg.style.height = "200px";
 }
 window.onload = fixStyle;
-
+*/
 
 /*
 Bakup of attribute names
