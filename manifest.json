@@ -10,7 +10,7 @@
     },
     "content_scripts": [
       {
-        "matches": ["https://*play.hbomax.com/player/*"],
+        "matches": ["https://play.hbomax.com/player/*"],
         "js": ["add-hotkeys.js"]
       }
     ]
