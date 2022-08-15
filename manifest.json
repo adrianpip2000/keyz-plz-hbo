@@ -2,7 +2,7 @@
 
     "manifest_version": 2,
     "name": "KEYZ PLZ HBO",
-    "version": "0.2",
+    "version": "0.3",
   
     "description": "Adds right/left arrow keys for skipping forward/backward in HBO Max plus some other small changes. Partly adopted from https://github.com/samoylovfp/hbo-keys.",
     "icons": {
