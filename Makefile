@@ -1,2 +1,2 @@
-hbo-keys.zip: add-hotkeys.js icons manifest.json
-	zip -r hbo-keys.zip add-hotkeys.js icons manifest.json
+keyz-plz-hbo.zip: add-hotkeys.js icons manifest.json
+	zip -r keyz-plz-hbo.zip add-hotkeys.js icons manifest.json
